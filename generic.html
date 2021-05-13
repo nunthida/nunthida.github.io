@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Generic - Stellar by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		body {
+		  margin: 0;
+		  font-family: Arial;
+		}
+		
+		/* The grid: Four equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding: 10px;
+		}
+		
+		/* Style the images inside the grid */
+		.column img {
+		  opacity: 0.8; 
+		  cursor: pointer; 
+		}
+		
+		.column img:hover {
+		  opacity: 1;
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		/* The expanding image container */
+		.container {
+		  position: relative;
+		  display: none;
+		}
+		
+		/* Expanding image text */
+		#imgtext {
+		  position: absolute;
+		  bottom: 15px;
+		  left: 15px;
+		  color: white;
+		  font-size: 20px;
+		}
+		
+		/* Closable button inside the expanded image */
+		.closebtn {
+		  position: absolute;
+		  top: 10px;
+		  right: 15px;
+		  color: white;
+		  font-size: 35px;
+		  cursor: pointer;
+		}
+		</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Portfolio</h1>
+			<p>All of my portfolio here!</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<span class="image main"><img src="images/Cover.jpg" alt="" /></span>
+				<h2>Graphic Design</h2>
+				
+				<div class="row">
+					<div class="column">
+					  <img src="images/Port/Docker.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/IMG_4654.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/IMG_4681.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/Super Adobe-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="column">
+					  <img src="images/Port/Super Experience Design-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/Super Illustrator-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/Super Lightroom-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					  <img src="images/Port/Super Premiere Pro-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+					</div>
+				  </div>
+				  
+				  <div class="container">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					<img id="expandedImg" style="width:100%">
+					<div id="imgtext"></div>
+				  </div>
+				  
+				  <script>
+				  function myFunction(imgs) {
+					var expandImg = document.getElementById("expandedImg");
+					var imgText = document.getElementById("imgtext");
+					expandImg.src = imgs.src;
+					imgText.innerHTML = imgs.alt;
+					expandImg.parentElement.style.display = "block";
+				  }
+				  </script>
+				
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Phonpapao Village &bull; Sisattanak Distric, Vientiane &bull; Laos</dd>
+					<dt>Phone</dt>
+					<dd>(+856) 20-52-333-564</dd>
+					<dt>Email</dt>
+					<dd><a href="#">nanthida.milk@gmail.com</a></dd>
+				</dl>
+			</section>
+			<section>
+				<h2>Socail Media</h2>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
